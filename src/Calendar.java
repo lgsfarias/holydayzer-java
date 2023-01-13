@@ -8,4 +8,13 @@ public class Calendar {
   public Holiday[] getHolidays() {
     return holidays;
   }
+
+  public String getHolidayByDate(String date) {
+    for (int i = 0; i < holidays.length; i++) {
+      if (holidays[i].getDate().equals(date)) {
+        return holidays[i].getName();
+      }
+    }
+    return "No holiday found";
+  }
 }

@@ -19,5 +19,8 @@ public class App {
         for (int i = 0; i < holidays.length; i++) {
             System.out.println(holidays[i].getName() + " - " + holidays[i].getDate());
         }
+
+        System.out.println(calendar.getHolidayByDate("1/1/2022"));
+        System.out.println(calendar.getHolidayByDate("2/1/2022"));
     }
 }
